@@ -1,4 +1,6 @@
+Copyright @ Harry Leong
 
+// fraction number, present a / b
 template<int a, int b>
 struct Number {
 	static const int A = a;
@@ -65,7 +67,7 @@ struct DFS2 {
 template<class N1, class N2, class N3>
 struct DFS3Step2 {
 	static const bool value = Or<
-		DFS2<AddT<N1, N2>, N3>::value,
+		DFS2<AddT<N1, N2>, N3>::value, // N1+N2 == N2+N1
 		DFS2<SubT<N1, N2>, N3>::value,
 		DFS2<SubT<N2, N1>, N3>::value,
 		DFS2<MulT<N1, N2>, N3>::value,
