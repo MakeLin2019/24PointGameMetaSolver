@@ -1,4 +1,4 @@
-Copyright @ Harry Leong
+//Copyright @ Harry Leong
 
 // fraction number, present a / b
 template<int a, int b>
